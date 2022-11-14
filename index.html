@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/CSS/index.css" />
+    <link rel="stylesheet" href="./Assets/CSS/Registration.css" />
+    <script
+      src="https://kit.fontawesome.com/584aebd994.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <img
+        src="https://selfregistration.cowin.gov.in/assets/images/new-logo.svg"
+      />
+      <div>
+        <a href="./index.html">Registration</a>
+        <a href="./Pages/Dashboard.html">Dashboard</a>
+        <a href="./Pages/Vaccinated.html">Vaccinated</a>
+      </div>
+    </nav>
+    <form id="form">
+      <h1>Registration Form</h1>
+
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <td>Name</td>
+              <td><input type="text" id="name" /></td>
+            </tr>
+            <tr>
+              <td>Age</td>
+              <td><input type="number" id="age" /></td>
+            </tr>
+            <tr>
+              <td>Designation</td>
+              <td>
+                <div>
+                  <input
+                    type="radio"
+                    name="Designation"
+                    id="Student"
+                    value="Student"
+                    checked
+                  />
+                  <label for="Student">Student</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="Designation"
+                    id="Employee "
+                    value="Employee "
+                  />
+                  <label for="Employee ">Employee </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Priority</td>
+              <td>
+                <select id="priority">
+                  <option value="p0">p0</option>
+                  <option value="p1">p1</option>
+                  <option value="p2">p2</option>
+                  <option value="p3">p3</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Vaccine</td>
+              <td>
+                <select id="vaccine">
+                  <option value="Covishield">Covishield</option>
+                  <option value="Covaxin">Covaxin</option>
+                  <option value="Sputnik">Sputnik</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
+<script src="./Assets/JavaScript/Registration.js"></script>
